@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
+  <div v-if="data.length > 0" :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
     <div class="container py-4">
       <div
         class="text-center"

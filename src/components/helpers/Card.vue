@@ -10,10 +10,18 @@
     >
       <div style="height: 180px;">
         <img
+          v-if="portfolio.pictures && portfolio.pictures.length > 0"
           class="card-img-top"
           :src="portfolio.pictures[0].img"
           alt="Card image cap"
         />
+        <div
+          v-else
+          class="d-flex align-items-center justify-content-center"
+          style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 180px;"
+        >
+          <span style="color: white; font-size: 0.95rem; font-weight: 600; text-align: center; padding: 1rem;">{{ portfolio.name }}</span>
+        </div>
       </div>
       <div class="card-body pborder-top">
         <h5 class="title2">{{ portfolio.name }}</h5>

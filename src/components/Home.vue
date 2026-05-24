@@ -31,6 +31,7 @@
               <i class="fab fa-linkedin"></i>
             </button>
             <button
+              v-if="github"
               class="btn btn-outline-secondary mx-2"
               @click="open('github')"
               v-tooltip.bottom="'GitHub'"
@@ -38,6 +39,7 @@
               <i class="fab fa-github"></i>
             </button>
             <button
+              v-if="angellist"
               class="btn btn-outline-secondary mx-2"
               @click="open('angellist')"
               v-tooltip.bottom="'AngelList'"
