@@ -17,6 +17,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Separate repos (nested, not part of this repo)
+knowledge-hub/
+ba-templates-toolkit/
+agile-sprint-tracker/
+
 # Editor directories and files
 .idea
 .vscode
