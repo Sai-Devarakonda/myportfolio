@@ -156,8 +156,8 @@ let info = {
       technologies: ["Risk Management", "IT Service Projects", "Qualitative Research", "Strategy"],
       category: "Research",
       date: "2023 - 2024",
-      github: "",
-      visit: "",
+      github: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
+      visit: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
       description:
         "Master's Thesis: Conducted a qualitative study focusing on differentiated risk management strategies for IT service projects across multiple industries. Identified key risk patterns, mitigation approaches, and strategic frameworks applicable to diverse organisational contexts."
     },
@@ -193,9 +193,92 @@ let info = {
       visit: "",
       description:
         "Applied Agile methodology to design and successfully launch a product, ensuring smooth project execution through iterative delivery, stakeholder collaboration, and continuous improvement practices."
+    },
+    {
+      name: "BA Templates Toolkit",
+      pictures: [],
+      technologies: ["Business Analysis", "Requirements", "Process Mapping", "Templates"],
+      category: "Business Analysis",
+      date: "2025",
+      github: "https://github.com/Harini-Devarakonda/ba-templates-toolkit",
+      visit: "https://github.com/Harini-Devarakonda/ba-templates-toolkit",
+      description:
+        "A comprehensive open-source collection of professional Business Analysis templates — BRD, user story cards, RAID log, UAT test plans, stakeholder register, and process mapping guide. A practical reference toolkit for BA practitioners at any level."
+    },
+    {
+      name: "Agile Sprint Tracker Dashboard",
+      pictures: [],
+      technologies: ["HTML", "CSS", "JavaScript", "Agile", "Sprint Planning"],
+      category: "Project Management",
+      date: "2025",
+      github: "https://github.com/Harini-Devarakonda/agile-sprint-tracker",
+      visit: "https://harini-devarakonda.github.io/agile-sprint-tracker/",
+      description:
+        "An interactive sprint planning and tracking dashboard built with HTML/CSS/JS. Features a burndown chart, backlog management, RAID log tracker, and sprint velocity metrics — helping Agile teams visualise and manage delivery without complex tooling."
+    },
+    {
+      name: "IT Risk Management Framework",
+      pictures: [],
+      technologies: ["Risk Management", "RAID Log", "IT Projects", "PMI", "Governance"],
+      category: "Research",
+      date: "2025",
+      github: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
+      visit: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
+      description:
+        "A practical, research-backed risk management framework for IT service projects. Includes risk classification matrices, probability/impact scoring, mitigation strategy templates, and governance reporting structures aligned with PMI CAPM standards."
     }
   ],
   portfolio_design: [],
+  articles: [
+    {
+      title: "AI Tools Transforming Business Analysis in 2025",
+      date: "May 2025",
+      category: "Trends",
+      tags: ["AI", "Business Analysis", "Copilot", "Automation"],
+      summary: "How Microsoft Copilot, ChatGPT, and AI-powered process mining are reshaping the BA role — from requirements elicitation to documentation, stakeholder comms, and gap analysis.",
+      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/ai-tools-for-business-analysts.md"
+    },
+    {
+      title: "Top BA Tools Every Analyst Should Know",
+      date: "April 2025",
+      category: "Tools",
+      tags: ["Jira", "Azure DevOps", "Confluence", "Miro", "Power BI"],
+      summary: "A practical guide to the modern BA toolkit — covering requirements management, collaboration, process modelling, and reporting tools used across industries in 2025.",
+      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/top-ba-tools.md"
+    },
+    {
+      title: "Hybrid Agile: Why One-Size-Fits-All No Longer Works",
+      date: "March 2025",
+      category: "Project Management",
+      tags: ["Agile", "Hybrid Delivery", "SAFe", "Waterfall", "Governance"],
+      summary: "Organisations are blending Agile and Waterfall into hybrid models for compliance-heavy sectors like healthcare. This article breaks down when and how to apply each approach.",
+      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/hybrid-agile.md"
+    },
+    {
+      title: "Risk Management in IT Projects: A Framework That Works",
+      date: "February 2025",
+      category: "Risk Management",
+      tags: ["Risk", "RAID Log", "IT Projects", "Frameworks", "PMI"],
+      summary: "Drawing from research across industries, this article outlines a practical risk identification, scoring, and mitigation framework for IT service projects — from RAID logs to governance dashboards.",
+      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/risk-management-it-projects.md"
+    },
+    {
+      title: "Stakeholder Management: A Business Analyst's Playbook",
+      date: "January 2025",
+      category: "BA Skills",
+      tags: ["Stakeholders", "Communication", "Workshops", "Power-Interest Grid"],
+      summary: "A step-by-step guide to mapping, engaging, and managing stakeholders throughout a project — covering power/interest grids, communication planning, and facilitating productive workshops.",
+      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/stakeholder-management-playbook.md"
+    },
+    {
+      title: "Latest Trends in Project Management for 2025",
+      date: "December 2024",
+      category: "Trends",
+      tags: ["Project Management", "2025 Trends", "AI in PM", "Value Delivery"],
+      summary: "From AI-assisted project planning and outcome-driven delivery to sustainability in projects and distributed team management — the key PM trends shaping organisations in 2025.",
+      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/pm-trends-2025.md"
+    }
+  ],
   recommendations: []
 };
 

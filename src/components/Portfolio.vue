@@ -107,6 +107,32 @@
           </div>
           <br />
         </v-tab>
+
+        <v-tab title="articles">
+          <br />
+          <div class="row">
+            <div
+              class="col-xl-4 col-bg-4 col-md-6 col-sm-12"
+              v-for="(article, idx) in articles_info"
+              :key="article.title"
+            >
+              <ArticleCard
+                :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
+                :article="article"
+                :idx="idx"
+                :nightMode="nightMode"
+                data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-delay="10"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+              />
+            </div>
+          </div>
+          <br />
+        </v-tab>
       </vue-tabs>
     </div>
     <transition name="modal">
@@ -132,6 +158,7 @@
 
 <script>
 import Card from "./helpers/Card";
+import ArticleCard from "./helpers/ArticleCard";
 import Modal from "./helpers/Modal";
 import DesignModal from "./helpers/DesignModal";
 import Carousel from "./helpers/Carousel";
@@ -147,6 +174,7 @@ export default {
   name: "Portfolio",
   components: {
     Card,
+    ArticleCard,
     Modal,
     VueTabs,
     VTab,
@@ -163,6 +191,7 @@ export default {
     return {
       all_info: info.portfolio,
       desgin_info: info.portfolio_design,
+      articles_info: info.articles || [],
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
