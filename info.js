@@ -1,3 +1,10 @@
+const aiToolsContent = require('!!raw-loader!./src/assets/articles/ai-tools-for-business-analysts.md').default;
+const topBaToolsContent = require('!!raw-loader!./src/assets/articles/top-ba-tools.md').default;
+const hybridAgileContent = require('!!raw-loader!./src/assets/articles/hybrid-agile.md').default;
+const riskMgmtContent = require('!!raw-loader!./src/assets/articles/risk-management-it-projects.md').default;
+const stakeholderContent = require('!!raw-loader!./src/assets/articles/stakeholder-management-playbook.md').default;
+const pmTrendsContent = require('!!raw-loader!./src/assets/articles/pm-trends-2025.md').default;
+
 let info = {
   name: "Sai Harini Devarakonda",
   logo_name: "harini",
@@ -236,7 +243,7 @@ let info = {
       category: "Trends",
       tags: ["AI", "Business Analysis", "Copilot", "Automation"],
       summary: "How Microsoft Copilot, ChatGPT, and AI-powered process mining are reshaping the BA role — from requirements elicitation to documentation, stakeholder comms, and gap analysis.",
-      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/ai-tools-for-business-analysts.md"
+      content: aiToolsContent
     },
     {
       title: "Top BA Tools Every Analyst Should Know",
@@ -244,7 +251,7 @@ let info = {
       category: "Tools",
       tags: ["Jira", "Azure DevOps", "Confluence", "Miro", "Power BI"],
       summary: "A practical guide to the modern BA toolkit — covering requirements management, collaboration, process modelling, and reporting tools used across industries in 2025.",
-      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/top-ba-tools.md"
+      content: topBaToolsContent
     },
     {
       title: "Hybrid Agile: Why One-Size-Fits-All No Longer Works",
@@ -252,7 +259,7 @@ let info = {
       category: "Project Management",
       tags: ["Agile", "Hybrid Delivery", "SAFe", "Waterfall", "Governance"],
       summary: "Organisations are blending Agile and Waterfall into hybrid models for compliance-heavy sectors like healthcare. This article breaks down when and how to apply each approach.",
-      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/hybrid-agile.md"
+      content: hybridAgileContent
     },
     {
       title: "Risk Management in IT Projects: A Framework That Works",
@@ -260,7 +267,7 @@ let info = {
       category: "Risk Management",
       tags: ["Risk", "RAID Log", "IT Projects", "Frameworks", "PMI"],
       summary: "Drawing from research across industries, this article outlines a practical risk identification, scoring, and mitigation framework for IT service projects — from RAID logs to governance dashboards.",
-      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/risk-management-it-projects.md"
+      content: riskMgmtContent
     },
     {
       title: "Stakeholder Management: A Business Analyst's Playbook",
@@ -268,7 +275,7 @@ let info = {
       category: "BA Skills",
       tags: ["Stakeholders", "Communication", "Workshops", "Power-Interest Grid"],
       summary: "A step-by-step guide to mapping, engaging, and managing stakeholders throughout a project — covering power/interest grids, communication planning, and facilitating productive workshops.",
-      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/stakeholder-management-playbook.md"
+      content: stakeholderContent
     },
     {
       title: "Latest Trends in Project Management for 2025",
@@ -276,7 +283,7 @@ let info = {
       category: "Trends",
       tags: ["Project Management", "2025 Trends", "AI in PM", "Value Delivery"],
       summary: "From AI-assisted project planning and outcome-driven delivery to sustainability in projects and distributed team management — the key PM trends shaping organisations in 2025.",
-      link: "https://github.com/Harini-Devarakonda/knowledge-hub/blob/main/articles/pm-trends-2025.md"
+      content: pmTrendsContent
     }
   ],
   recommendations: []

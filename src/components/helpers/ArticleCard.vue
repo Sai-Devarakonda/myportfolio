@@ -45,9 +45,9 @@
         <div class="d-flex align-items-center justify-content-between mt-2">
           <span class="date" style="font-size: 0.75rem;">{{ article.date }}</span>
           <button
-            v-if="article.link"
+            v-if="article.content"
             class="btn-sm btn btn-outline-secondary no-outline"
-            @click.prevent="open(article.link)"
+            @click.prevent="$emit('read', article)"
           >
             read more
           </button>

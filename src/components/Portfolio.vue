@@ -26,7 +26,7 @@
       />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-        <v-tab title="development">
+        <v-tab title="projects">
           <br />
           <div class="row">
             <div
@@ -54,59 +54,7 @@
           </div>
         </v-tab>
 
-        <v-tab title="design">
-          <div class="row">
-            <div
-              v-for="(design, idx) in desgin_info"
-              :key="idx"
-              :class="{ 'mt-4': idx === 0 ? true : true }"
-              class="col-xl-6 col-bg-6 col-md-12 col-sm-12"
-              style="position: relative;"
-            >
-              <vueper-slides
-                :dragging-distance="50"
-                fixed-height="300px"
-                :bullets="false"
-                slide-content-outside="bottom"
-                style="position: aboslute"
-                  @click.prevent="showDesignModalFn(design)"
 
-              >
-                <vueper-slide
-                  v-for="(slide, i) in design.pictures"
-                  :key="i"
-                  :image="slide.img"
-                />
-              </vueper-slides>
-              <div
-                style="width: 100%; display: flex; justify-content: space-between"
-                class="mt-2"
-              >
-                <div>
-                  <div class="title2" style="font-weight: 500;">{{ design.title }}</div>
-                  <span
-                    class="badge mr-2 mb-2"
-                    v-for="tech in design.technologies"
-                    :key="tech"
-                    :class="{ 'bg-dark4': nightMode }"
-                    >{{ tech }}</span
-                  >
-                  •
-                  <span class="date ml-1">{{design.date}}</span>
-                </div>
-
-                <button
-                  style="height: 31px; margin-top: 5px;"
-                  class="btn-sm btn btn-outline-secondary no-outline"
-                  @click.prevent="showDesignModalFn(design)"
-                >
-                  read more
-                </button>
-              </div>
-            </div>
-          </div>
-          <br />
-        </v-tab>
 
         <v-tab title="articles">
           <br />
@@ -121,6 +69,7 @@
                 :article="article"
                 :idx="idx"
                 :nightMode="nightMode"
+                @read="openArticle"
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-delay="10"
@@ -144,43 +93,34 @@
         :nightMode="nightMode"
       />
     </transition>
-    <transition name="modal">
-      <DesignModal
-        :showModal="showDesignModal"
-        @close="closeModal"
-        v-if="showDesignModal"
-        :portfolio="design_modal_info"
-        :nightMode="nightMode"
-      />
-    </transition>
+    <ArticleModal
+      v-if="showArticleModal"
+      :article="article_modal_info"
+      :nightMode="nightMode"
+      @close="closeArticleModal"
+    />
   </div>
 </template>
 
 <script>
 import Card from "./helpers/Card";
 import ArticleCard from "./helpers/ArticleCard";
+import ArticleModal from "./helpers/ArticleModal";
 import Modal from "./helpers/Modal";
-import DesignModal from "./helpers/DesignModal";
-import Carousel from "./helpers/Carousel";
 import info from "../../info";
 
 import { VueTabs, VTab } from "vue-nav-tabs";
 import "vue-nav-tabs/themes/vue-tabs.css";
-
-import { VueperSlides, VueperSlide } from "vueperslides";
-import "vueperslides/dist/vueperslides.css";
 
 export default {
   name: "Portfolio",
   components: {
     Card,
     ArticleCard,
+    ArticleModal,
     Modal,
     VueTabs,
     VTab,
-    VueperSlides,
-    VueperSlide,
-    DesignModal,
   },
   props: {
     nightMode: {
@@ -190,13 +130,12 @@ export default {
   data() {
     return {
       all_info: info.portfolio,
-      desgin_info: info.portfolio_design,
       articles_info: info.articles || [],
       portfolio_info: [],
       showModal: false,
-      showDesignModal: false,
+      showArticleModal: false,
       modal_info: {},
-      design_modal_info: {},
+      article_modal_info: {},
       number: 3,
       showBtn: "show more",
       shower: 0,
@@ -230,16 +169,18 @@ export default {
     },
     closeModal() {
       this.showModal = false;
-      this.showDesignModal = false;
       document.getElementsByTagName("body")[0].classList.remove("modal-open");
+    },
+    openArticle(article) {
+      this.article_modal_info = article;
+      this.showArticleModal = true;
+    },
+    closeArticleModal() {
+      this.showArticleModal = false;
     },
     showModalFn(portfolio) {
       this.modal_info = portfolio;
       this.showModal = true;
-    },
-    showDesignModalFn(design_portfolio) {
-      this.design_modal_info = design_portfolio;
-      this.showDesignModal = true;
     },
     showMore() {
       if (this.number != this.all_info.length) {
