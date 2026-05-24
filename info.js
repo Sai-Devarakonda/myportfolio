@@ -15,7 +15,7 @@ let info = {
     github: "https://github.com/Harini-Devarakonda/myportfolio.git",
     angellist: "",
     resume:
-      "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
+      "https://github.com/Harini-Devarakonda/myportfolio/blob/master/src/assets/pdfs/Resume.pdf"
   },
   education: [
     {
