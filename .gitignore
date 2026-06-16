@@ -21,6 +21,7 @@ yarn-error.log*
 knowledge-hub/
 ba-templates-toolkit/
 agile-sprint-tracker/
+it-risk-management-framework/
 
 # Editor directories and files
 .idea
