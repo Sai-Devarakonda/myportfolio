@@ -2,11 +2,11 @@
 
 > Personal portfolio website for Sai Harini Devarakonda — Business Analyst & Project Manager. Built with Vue.js.
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://harini-devarakonda.github.io/myportfolio/)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://sai-devarakonda.github.io/myportfolio/)
 [![npm version](https://img.shields.io/badge/npm-6.14-orange?style=flat&logo=appveyor)](https://github.com/npm/cli)
 [![vue dependency](https://img.shields.io/badge/vue-2.6.11-brightgreen?style=flat&logo=appveyor)](https://github.com/vuejs/vue)
 
-💻 Live at [https://harini-devarakonda.github.io/myportfolio/](https://harini-devarakonda.github.io/myportfolio/)
+💻 Live at [https://sai-devarakonda.github.io/myportfolio/](https://sai-devarakonda.github.io/myportfolio/)
 
 ---
 
@@ -32,7 +32,7 @@ These are the local dependencies that are needed for development,
 
 Get this repo to your local machine using,
 ```shell
-$ git clone https://github.com/Harini-Devarakonda/myportfolio.git
+$ git clone https://github.com/Sai-Devarakonda/myportfolio.git
 ```
 
 ### Setup 
@@ -123,9 +123,9 @@ The **contact** section of the template makes use of this API called [emailjs](h
 
 Reach out to Sai Harini Devarakonda:
 
-- Portfolio: <a href="https://harini-devarakonda.github.io/myportfolio/" target="_blank">harini-devarakonda.github.io/myportfolio</a>
+- Portfolio: <a href="https://sai-devarakonda.github.io/myportfolio/" target="_blank">sai-devarakonda.github.io/myportfolio</a>
 - LinkedIn: <a href="https://www.linkedin.com/in/sai-harini-devarakonda/" target="_blank">linkedin.com/in/sai-harini-devarakonda</a>
-- GitHub: <a href="https://github.com/Harini-Devarakonda" target="_blank">github.com/Harini-Devarakonda</a>
+- GitHub: <a href="https://github.com/Sai-Devarakonda" target="_blank">github.com/Sai-Devarakonda</a>
 
 ---
 

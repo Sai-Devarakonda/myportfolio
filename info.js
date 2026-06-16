@@ -19,10 +19,10 @@ let info = {
     "Business analysis and project delivery professional with experience supporting digital and operational change initiatives across healthcare and technology environments. Skilled in stakeholder engagement, requirements gathering, process improvement, governance reporting, risk and issue tracking, and cross-functional collaboration.<br><br>Experienced in supporting Agile delivery, backlog refinement, sprint planning, and documentation that helps teams deliver value across people, processes, and technology. CAPM certified and targeting Business Analyst opportunities where I can contribute to transformation, service improvement, and effective change delivery.",
   links: {
     linkedin: "https://www.linkedin.com/in/harinidevarakonda",
-    github: "https://github.com/Harini-Devarakonda/myportfolio.git",
+    github: "https://github.com/Sai-Devarakonda/myportfolio.git",
     angellist: "",
     resume:
-      "https://github.com/Harini-Devarakonda/myportfolio/blob/master/src/assets/pdfs/Resume.pdf"
+      "https://github.com/Sai-Devarakonda/myportfolio/blob/master/src/assets/pdfs/Resume.pdf"
   },
   education: [
     {
@@ -163,8 +163,8 @@ let info = {
       technologies: ["Risk Management", "IT Service Projects", "Qualitative Research", "Strategy"],
       category: "Research",
       date: "2023 - 2024",
-      github: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
-      visit: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
+      github: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
+      visit: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
       description:
         "Master's Thesis: Conducted a qualitative study focusing on differentiated risk management strategies for IT service projects across multiple industries. Identified key risk patterns, mitigation approaches, and strategic frameworks applicable to diverse organisational contexts."
     },
@@ -207,8 +207,8 @@ let info = {
       technologies: ["Business Analysis", "Requirements", "Process Mapping", "Templates"],
       category: "Business Analysis",
       date: "2025",
-      github: "https://github.com/Harini-Devarakonda/ba-templates-toolkit",
-      visit: "https://github.com/Harini-Devarakonda/ba-templates-toolkit",
+      github: "https://github.com/Sai-Devarakonda/ba-templates-toolkit",
+      visit: "https://github.com/Sai-Devarakonda/ba-templates-toolkit",
       description:
         "A comprehensive open-source collection of professional Business Analysis templates — BRD, user story cards, RAID log, UAT test plans, stakeholder register, and process mapping guide. A practical reference toolkit for BA practitioners at any level."
     },
@@ -218,8 +218,8 @@ let info = {
       technologies: ["HTML", "CSS", "JavaScript", "Agile", "Sprint Planning"],
       category: "Project Management",
       date: "2025",
-      github: "https://github.com/Harini-Devarakonda/agile-sprint-tracker",
-      visit: "https://harini-devarakonda.github.io/agile-sprint-tracker/",
+      github: "https://github.com/Sai-Devarakonda/agile-sprint-tracker",
+      visit: "https://sai-devarakonda.github.io/agile-sprint-tracker/",
       description:
         "An interactive sprint planning and tracking dashboard built with HTML/CSS/JS. Features a burndown chart, backlog management, RAID log tracker, and sprint velocity metrics — helping Agile teams visualise and manage delivery without complex tooling."
     },
@@ -229,8 +229,8 @@ let info = {
       technologies: ["Risk Management", "RAID Log", "IT Projects", "PMI", "Governance"],
       category: "Research",
       date: "2025",
-      github: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
-      visit: "https://github.com/Harini-Devarakonda/it-risk-management-framework",
+      github: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
+      visit: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
       description:
         "A practical, research-backed risk management framework for IT service projects. Includes risk classification matrices, probability/impact scoring, mitigation strategy templates, and governance reporting structures aligned with PMI CAPM standards."
     }
