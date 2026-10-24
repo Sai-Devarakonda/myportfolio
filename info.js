@@ -16,10 +16,10 @@ let info = {
     }
   },
   description:
-    "Business analysis and project delivery professional with experience supporting digital and operational change initiatives across healthcare and technology environments. Skilled in stakeholder engagement, requirements gathering, process improvement, governance reporting, risk and issue tracking, and cross-functional collaboration.<br><br>Experienced in supporting Agile delivery, backlog refinement, sprint planning, and documentation that helps teams deliver value across people, processes, and technology. CAPM certified and targeting Business Analyst opportunities where I can contribute to transformation, service improvement, and effective change delivery.",
+    "Project coordinator and business analyst with a background spanning software delivery, data and workforce operations. I started as a full-stack developer, moved into Agile delivery and stakeholder reporting at Cognizant, and most recently coordinated workforce projects across NHS Trusts at NHS Professionals, where I cut hiring-process discrepancies to zero and halved candidate turnaround time.<br><br>I currently volunteer as a Junior Project Manager at Reco Genie, an AI start-up, running sprints in Jira, testing releases and onboarding early-adopter restaurants. CAPM certified, PRINCE2 Practitioner in progress, with a Master's in Business Management from the University of Strathclyde. Open to project coordination, junior project management and business analyst roles.",
   links: {
     linkedin: "https://www.linkedin.com/in/harinidevarakonda",
-    github: "https://github.com/Sai-Devarakonda/myportfolio.git",
+    github: "https://github.com/Sai-Devarakonda",
     angellist: "",
     resume:
       "https://github.com/Sai-Devarakonda/myportfolio/blob/master/src/assets/pdfs/Resume.pdf"
@@ -45,7 +45,7 @@ let info = {
       name: "JNTUK University",
       place: "India",
       date: "2016 - 2020",
-      degree: "Bachelor of Technology",
+      degree: "Bachelor of Technology (Electronics and Communication Engineering)",
       gpa: "",
       description:
         "Completed a Bachelor of Technology degree providing a strong foundation in analytical thinking, problem solving, and technical skills.",
@@ -58,22 +58,49 @@ let info = {
   ],
   experience: [
     {
+      name: "Reco Genie",
+      place: "United Kingdom",
+      date: "Apr, 2026 - Present",
+      position: "Junior Project Manager (Voluntary)",
+      description:
+        "Coordinate delivery for an AI platform that helps local restaurants and small businesses automate daily tasks and forecast customer demand. Maintain the Jira board, run daily stand-ups and sprint planning, and write release notes for new features. With no dedicated QA team, I test new web workflows and dashboards on desktop and mobile before release. I also onboard early-adopter restaurants, turn their feedback into prioritised product requirements, and clean the sales and menu data used to train the forecasting model.",
+      skills: ["Jira & Confluence", "Sprint Planning", "UAT", "Requirements Prioritisation", "Customer Onboarding", "Data Preparation"]
+    },
+    {
       name: "NHS Professionals (NHSP)",
       place: "United Kingdom",
-      date: "May, 2025 - Present",
-      position: "Trust Recruitment Coordinator & Onboarding Specialist",
+      date: "May, 2025 - May, 2026",
+      position: "Trust Recruitment Coordinator (Workforce Project Coordination)",
       description:
-        "Coordinate multiple concurrent workstreams across NHS Trusts, maintaining delivery plans, timelines, and governance requirements. Partner with Trust leadership, HR teams, and operational stakeholders to gather requirements, align delivery priorities, and remove blockers. Maintain RAID logs, produce workforce dashboards, status updates, and structured reports supporting data-driven decision-making and continuous improvement.",
-      skills: ["Project Coordination", "RAID Logs", "Stakeholder Management", "Governance Reporting", "Process Improvement"]
+        "Role scope expanded following an organisational restructure to include end-to-end workforce project coordination, planning, stakeholder governance and cross-Trust operational change. Coordinated concurrent onboarding workstreams across 2 to 3 NHS Trusts and around 50 agencies, handling 200 to 300 candidates a week. Streamlined the hiring process to cut discrepancies from 2-3% to zero and turnaround from 3 weeks to 1.5 weeks, and automated weekly compliance checks to bring errors from 5% to zero. Reported onboarding and performance KPIs to Trust leaders through Power BI dashboards, and tracked monthly budgets for 30+ departments in SAP to reduce agency spend.",
+      skills: ["Project Coordination", "Stakeholder Management", "Power BI", "KPI Reporting", "Process Improvement", "Budget Tracking"]
+    },
+    {
+      name: "William Hill (888)",
+      place: "United Kingdom",
+      date: "Sep, 2024 - Jan, 2025",
+      position: "Store Manager / Customer Service Executive (Part-Time)",
+      description:
+        "Ran daily store operations, including transaction processing and end-of-shift financial reporting with zero discrepancies. Ensured compliance with age verification, responsible gambling and anti-money laundering procedures, and managed stock levels.",
+      skills: ["Operations", "Regulatory Compliance", "Financial Reporting", "Team Coordination"]
+    },
+    {
+      name: "Won Connect",
+      place: "United Kingdom",
+      date: "May, 2024 - Jan, 2025",
+      position: "Digital Marketing Intern",
+      description:
+        "Planned and coordinated multi-channel campaigns across Facebook, Instagram, LinkedIn and email, managing content schedules and deliverables. Tracked performance in Google Analytics and turned the results into reports that shaped the next round of campaigns.",
+      skills: ["Campaign Coordination", "Google Analytics", "Performance Reporting", "Content Planning"]
     },
     {
       name: "Cognizant Technology Solutions",
       place: "India",
       date: "Feb, 2022 - Aug, 2023",
-      position: "Associate Consultant",
+      position: "Associate Consultant / Developer",
       description:
-        "Supported Agile delivery through sprint planning, backlog refinement, progress tracking, and stakeholder updates. Worked with cross-functional teams to understand business requirements, analyze geospatial data workflows, and support process improvements. Prepared progress reports and performance insights for senior stakeholders, and mentored junior analysts.",
-      skills: ["Agile", "Backlog Refinement", "Requirements Analysis", "Stakeholder Reporting", "Process Improvement"]
+        "Worked on geospatial data quality for Apple Maps, analysing and validating datasets in SQL with engineering, QA and product teams. Supported Agile delivery through sprint planning, backlog refinement and stakeholder updates, captured business requirements in client meetings, and presented KPI reports to senior management. Mentored junior analysts and was promoted to a senior team within three months.",
+      skills: ["Agile", "SQL", "Requirements Analysis", "Stakeholder Reporting", "Process Mapping"]
     },
     {
       name: "Vega Prosys",
@@ -81,8 +108,8 @@ let info = {
       date: "Feb, 2021 - Feb, 2022",
       position: "Content Manager",
       description:
-        "Took ownership of a 15-month project, analyzed the delivery landscape, identified bottlenecks and risks, and accelerated execution. Applied Agile principles to improve workflow efficiency, align stakeholders, and complete the project in 10 months instead of the original 15-month timeline.",
-      skills: ["Agile Delivery", "Project Management", "Stakeholder Alignment", "Risk Management", "Workflow Optimisation"]
+        "Led a team of intern developers building full-stack web applications on the MERN stack, gathering client requirements and effort estimates at the start of each project. Reworked the team's workflow using Agile practices, removing bottlenecks and aligning stakeholders, and delivered a six-month project in three months.",
+      skills: ["Agile Delivery", "Team Leadership", "Requirements Gathering", "MERN Stack", "Workflow Optimisation"]
     },
     {
       name: "IT Aspects",
@@ -90,8 +117,8 @@ let info = {
       date: "Feb, 2020 - Feb, 2021",
       position: "Full-Stack Developer",
       description:
-        "Worked closely with clients and internal stakeholders to clarify requirements, align priorities, and support smooth delivery of technical solutions. Resolved priority issues, supported service continuity, and demonstrated flexibility in adapting to new tools and project needs.",
-      skills: ["Requirements Gathering", "Stakeholder Coordination", "Technical Delivery", "Client Management"]
+        "Built and maintained client web applications in PHP (Laravel, Yii2, CodeIgniter) and React.js, working directly with clients to clarify requirements and priorities. Resolved a critical payment gateway failure on a live charity website, restoring transactions, and contributed to SEO and content improvements.",
+      skills: ["Requirements Gathering", "PHP & React", "Client Management", "Technical Delivery"]
     }
   ],
   skills: [
@@ -136,12 +163,16 @@ let info = {
     {
       title: "tools & methods",
       info: [
-        "Microsoft Office Suite",
+        "Jira & Confluence",
         "Azure DevOps",
-        "BPMN Concepts",
-        "Data Analysis",
-        "Process Improvement",
-        "Agile Ways of Working"
+        "Microsoft Project",
+        "Power BI",
+        "SQL",
+        "Tableau",
+        "Advanced Excel",
+        "SAP",
+        "SharePoint",
+        "Miro"
       ],
       icon: "fas fa-tools"
     },
@@ -149,24 +180,25 @@ let info = {
       title: "certifications",
       info: [
         "CAPM - PMI",
-        "Project Management Foundations",
+        "PRINCE2 Practitioner (in progress)",
+        "Project Management Foundations - PMI",
         "Lean Six Sigma Foundations",
-        "Web Development"
+        "Web Development - Tech Mahindra"
       ],
       icon: "fa fa-certificate"
     }
   ],
   portfolio: [
     {
-      name: "Risk Management Strategies in IT Projects",
+      name: "Reco Genie: Sprint Delivery at an AI Start-up",
       pictures: [],
-      technologies: ["Risk Management", "IT Service Projects", "Qualitative Research", "Strategy"],
-      category: "Research",
-      date: "2023 - 2024",
-      github: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
-      visit: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
+      technologies: ["Jira", "Confluence", "Sprint Planning", "UAT", "Release Notes"],
+      category: "Project Management",
+      date: "2026",
+      github: "",
+      visit: "",
       description:
-        "Master's Thesis: Conducted a qualitative study focusing on differentiated risk management strategies for IT service projects across multiple industries. Identified key risk patterns, mitigation approaches, and strategic frameworks applicable to diverse organisational contexts."
+        "Ongoing voluntary role coordinating delivery for an AI platform that helps local restaurants automate daily tasks and forecast demand. I set up and run the sprint process in Jira, test every release by hand before it goes live, write release notes, and turn feedback from early-adopter restaurants (for example, a bakery wanting forecasts to account for rainy days) into prioritised requirements."
     },
     {
       name: "Glasgow Startup Business Consulting",
@@ -210,7 +242,7 @@ let info = {
       github: "https://github.com/Sai-Devarakonda/ba-templates-toolkit",
       visit: "https://github.com/Sai-Devarakonda/ba-templates-toolkit",
       description:
-        "A comprehensive open-source collection of professional Business Analysis templates — BRD, user story cards, RAID log, UAT test plans, stakeholder register, and process mapping guide. A practical reference toolkit for BA practitioners at any level."
+        "A comprehensive open-source collection of professional Business Analysis templates: BRD, user story cards, RAID log, UAT test plans, stakeholder register, and process mapping guide. A practical reference toolkit for BA practitioners at any level."
     },
     {
       name: "Agile Sprint Tracker Dashboard",
@@ -221,18 +253,18 @@ let info = {
       github: "https://github.com/Sai-Devarakonda/agile-sprint-tracker",
       visit: "https://sai-devarakonda.github.io/agile-sprint-tracker/",
       description:
-        "An interactive sprint planning and tracking dashboard built with HTML/CSS/JS. Features a burndown chart, backlog management, RAID log tracker, and sprint velocity metrics — helping Agile teams visualise and manage delivery without complex tooling."
+        "An interactive sprint planning and tracking dashboard built with HTML/CSS/JS. Features a burndown chart, backlog management, RAID log tracker, and sprint velocity metrics, helping Agile teams visualise and manage delivery without complex tooling."
     },
     {
       name: "IT Risk Management Framework",
       pictures: [],
-      technologies: ["Risk Management", "RAID Log", "IT Projects", "PMI", "Governance"],
+      technologies: ["Risk Management", "RAID Log", "IT Projects", "Qualitative Research", "Governance"],
       category: "Research",
-      date: "2025",
+      date: "2024 - 2025",
       github: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
       visit: "https://github.com/Sai-Devarakonda/it-risk-management-framework",
       description:
-        "A practical, research-backed risk management framework for IT service projects. Includes risk classification matrices, probability/impact scoring, mitigation strategy templates, and governance reporting structures aligned with PMI CAPM standards."
+        "Built from my Master's thesis, a qualitative study of how risk management strategies differ across IT service projects for clients in different industries. Turns the findings into a practical framework: risk classification matrices, probability and impact scoring, mitigation templates, and governance reporting structures aligned with PMI standards."
     }
   ],
   portfolio_design: [],
@@ -242,7 +274,7 @@ let info = {
       date: "May 2025",
       category: "Trends",
       tags: ["AI", "Business Analysis", "Copilot", "Automation"],
-      summary: "How Microsoft Copilot, ChatGPT, and AI-powered process mining are reshaping the BA role — from requirements elicitation to documentation, stakeholder comms, and gap analysis.",
+      summary: "How Microsoft Copilot, ChatGPT, and AI-powered process mining are reshaping the BA role, from requirements elicitation to documentation, stakeholder comms, and gap analysis.",
       content: aiToolsContent
     },
     {
@@ -250,7 +282,7 @@ let info = {
       date: "April 2025",
       category: "Tools",
       tags: ["Jira", "Azure DevOps", "Confluence", "Miro", "Power BI"],
-      summary: "A practical guide to the modern BA toolkit — covering requirements management, collaboration, process modelling, and reporting tools used across industries in 2025.",
+      summary: "A practical guide to the modern BA toolkit, covering requirements management, collaboration, process modelling, and reporting tools used across industries in 2025.",
       content: topBaToolsContent
     },
     {
@@ -266,7 +298,7 @@ let info = {
       date: "February 2025",
       category: "Risk Management",
       tags: ["Risk", "RAID Log", "IT Projects", "Frameworks", "PMI"],
-      summary: "Drawing from research across industries, this article outlines a practical risk identification, scoring, and mitigation framework for IT service projects — from RAID logs to governance dashboards.",
+      summary: "Drawing from research across industries, this article outlines a practical risk identification, scoring, and mitigation framework for IT service projects, from RAID logs to governance dashboards.",
       content: riskMgmtContent
     },
     {
@@ -274,7 +306,7 @@ let info = {
       date: "January 2025",
       category: "BA Skills",
       tags: ["Stakeholders", "Communication", "Workshops", "Power-Interest Grid"],
-      summary: "A step-by-step guide to mapping, engaging, and managing stakeholders throughout a project — covering power/interest grids, communication planning, and facilitating productive workshops.",
+      summary: "A step-by-step guide to mapping, engaging, and managing stakeholders throughout a project, covering power/interest grids, communication planning, and facilitating productive workshops.",
       content: stakeholderContent
     },
     {
@@ -282,7 +314,7 @@ let info = {
       date: "December 2024",
       category: "Trends",
       tags: ["Project Management", "2025 Trends", "AI in PM", "Value Delivery"],
-      summary: "From AI-assisted project planning and outcome-driven delivery to sustainability in projects and distributed team management — the key PM trends shaping organisations in 2025.",
+      summary: "From AI-assisted project planning and outcome-driven delivery to sustainability in projects and distributed team management, the key PM trends shaping organisations in 2025.",
       content: pmTrendsContent
     }
   ],
