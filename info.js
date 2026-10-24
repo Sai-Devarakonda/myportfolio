@@ -1,5 +1,3 @@
-const aiToolsContent = require('!!raw-loader!./src/assets/articles/ai-tools-for-business-analysts.md').default;
-const topBaToolsContent = require('!!raw-loader!./src/assets/articles/top-ba-tools.md').default;
 const hybridAgileContent = require('!!raw-loader!./src/assets/articles/hybrid-agile.md').default;
 const riskMgmtContent = require('!!raw-loader!./src/assets/articles/risk-management-it-projects.md').default;
 const stakeholderContent = require('!!raw-loader!./src/assets/articles/stakeholder-management-playbook.md').default;
@@ -16,7 +14,7 @@ let info = {
     }
   },
   description:
-    "Project coordinator and business analyst with a background spanning software delivery, data and workforce operations. I started as a full-stack developer, moved into Agile delivery and stakeholder reporting at Cognizant, and most recently coordinated workforce projects across NHS Trusts at NHS Professionals, where I cut hiring-process discrepancies to zero and halved candidate turnaround time.<br><br>I currently volunteer as a Junior Project Manager at Reco Genie, an AI start-up, running sprints in Jira, testing releases and onboarding early-adopter restaurants. CAPM certified, PRINCE2 Practitioner in progress, with a Master's in Business Management from the University of Strathclyde. Open to project coordination, junior project management and business analyst roles.",
+    "Project coordinator and aspiring project manager with a background spanning software delivery, data and workforce operations. I started as a full-stack developer, moved into Agile delivery at Cognizant, and most recently coordinated workforce projects across NHS Trusts at NHS Professionals, where I cut hiring-process discrepancies to zero and halved candidate turnaround time.<br><br>I currently volunteer as a Junior Project Manager at Reco Genie, an AI start-up, running sprints in Jira, testing releases and onboarding early-adopter restaurants. CAPM certified, PRINCE2 Practitioner in progress, with a Master's in Business Management from the University of Strathclyde. Open to project coordinator and junior project manager roles.",
   links: {
     linkedin: "https://www.linkedin.com/in/harinidevarakonda",
     github: "https://github.com/Sai-Devarakonda",
@@ -32,13 +30,12 @@ let info = {
       degree: "Master's in Business Management (MBM)",
       gpa: "",
       description:
-        "Completed a Master's in Business Management with a focus on strategy, consulting, and operational excellence. Thesis on Differentiated Risk Management Strategies in IT Service Projects.",
+        "Completed a Master's in Business Management including modules in Project Management and Service Operations Management. Thesis on Differentiated Risk Management Strategies in IT Service Projects.",
       skills: [
-        "Business Strategy",
-        "Risk Management",
-        "Consulting",
         "Project Management",
-        "Operations"
+        "Risk Management",
+        "Service Operations Management",
+        "Business Strategy"
       ]
     },
     {
@@ -64,7 +61,7 @@ let info = {
       position: "Junior Project Manager (Voluntary)",
       description:
         "Coordinate delivery for an AI platform that helps local restaurants and small businesses automate daily tasks and forecast customer demand. Maintain the Jira board, run daily stand-ups and sprint planning, and write release notes for new features. With no dedicated QA team, I test new web workflows and dashboards on desktop and mobile before release. I also onboard early-adopter restaurants, turn their feedback into prioritised product requirements, and clean the sales and menu data used to train the forecasting model.",
-      skills: ["Jira & Confluence", "Sprint Planning", "UAT", "Requirements Prioritisation", "Customer Onboarding", "Data Preparation"]
+      skills: ["Jira & Confluence", "Sprint Planning", "Release Management", "UAT", "Backlog Prioritisation", "Customer Onboarding"]
     },
     {
       name: "NHS Professionals (NHSP)",
@@ -100,7 +97,7 @@ let info = {
       position: "Associate Consultant / Developer",
       description:
         "Worked on geospatial data quality for Apple Maps, analysing and validating datasets in SQL with engineering, QA and product teams. Supported Agile delivery through sprint planning, backlog refinement and stakeholder updates, captured business requirements in client meetings, and presented KPI reports to senior management. Mentored junior analysts and was promoted to a senior team within three months.",
-      skills: ["Agile", "SQL", "Requirements Analysis", "Stakeholder Reporting", "Process Mapping"]
+      skills: ["Agile", "Sprint Planning", "Backlog Refinement", "Stakeholder Reporting", "SQL"]
     },
     {
       name: "Vega Prosys",
@@ -109,7 +106,7 @@ let info = {
       position: "Content Manager",
       description:
         "Led a team of intern developers building full-stack web applications on the MERN stack, gathering client requirements and effort estimates at the start of each project. Reworked the team's workflow using Agile practices, removing bottlenecks and aligning stakeholders, and delivered a six-month project in three months.",
-      skills: ["Agile Delivery", "Team Leadership", "Requirements Gathering", "MERN Stack", "Workflow Optimisation"]
+      skills: ["Agile Delivery", "Team Leadership", "Effort Estimation", "Workflow Optimisation", "MERN Stack"]
     },
     {
       name: "IT Aspects",
@@ -118,25 +115,25 @@ let info = {
       position: "Full-Stack Developer",
       description:
         "Built and maintained client web applications in PHP (Laravel, Yii2, CodeIgniter) and React.js, working directly with clients to clarify requirements and priorities. Resolved a critical payment gateway failure on a live charity website, restoring transactions, and contributed to SEO and content improvements.",
-      skills: ["Requirements Gathering", "PHP & React", "Client Management", "Technical Delivery"]
+      skills: ["Client Management", "Technical Delivery", "Issue Resolution", "PHP & React"]
     }
   ],
   skills: [
     {
-      title: "business analysis",
+      title: "planning & delivery",
       info: [
-        "Requirements Gathering",
-        "Functional & Non-Functional Requirements",
-        "As-Is / To-Be Analysis",
-        "Process Mapping",
-        "Root Cause Analysis",
-        "User Stories",
-        "UAT Support"
+        "Project Planning & Scheduling",
+        "Milestone & Dependency Tracking",
+        "Resource Coordination",
+        "Budget Tracking",
+        "Scope & Requirements Definition",
+        "UAT Coordination",
+        "Process Improvement"
       ],
-      icon: "fa fa-search"
+      icon: "fa fa-calendar-check-o"
     },
     {
-      title: "project management",
+      title: "methods & governance",
       info: [
         "Agile & Scrum",
         "Waterfall",
@@ -153,7 +150,7 @@ let info = {
       info: [
         "Stakeholder Management",
         "Workshop Facilitation",
-        "Governance Reporting",
+        "Steering & Governance Reporting",
         "Cross-functional Collaboration",
         "Dashboard Reporting",
         "Status Updates"
@@ -201,28 +198,6 @@ let info = {
         "Ongoing voluntary role coordinating delivery for an AI platform that helps local restaurants automate daily tasks and forecast demand. I set up and run the sprint process in Jira, test every release by hand before it goes live, write release notes, and turn feedback from early-adopter restaurants (for example, a bakery wanting forecasts to account for rainy days) into prioritised requirements."
     },
     {
-      name: "Glasgow Startup Business Consulting",
-      pictures: [],
-      technologies: ["Business Strategy", "Market Analysis", "Consulting", "Growth Strategy"],
-      category: "Consulting",
-      date: "2023 - 2024",
-      github: "",
-      visit: "",
-      description:
-        "Acted as a consultant for Life Link, a wellness and counselling services company based in Glasgow. Designed and implemented a comprehensive business strategy focused on growth, client engagement, and increasing market awareness, helping the company strengthen its presence in the market."
-    },
-    {
-      name: "Marketing Strategy for Olipop UK Launch",
-      pictures: [],
-      technologies: ["Marketing Strategy", "Market Research", "Brand Positioning", "Influencer Strategy"],
-      category: "Marketing",
-      date: "2023 - 2024",
-      github: "",
-      visit: "",
-      description:
-        "Developed a comprehensive marketing strategy for Olipop's UK market launch, leveraging market research, influencer collaborations, and strategic partnerships to enhance brand positioning and consumer engagement."
-    },
-    {
       name: "Agile Product Launch",
       pictures: [],
       technologies: ["Agile", "Product Management", "Sprint Planning", "Delivery"],
@@ -232,17 +207,6 @@ let info = {
       visit: "",
       description:
         "Applied Agile methodology to design and successfully launch a product, ensuring smooth project execution through iterative delivery, stakeholder collaboration, and continuous improvement practices."
-    },
-    {
-      name: "BA Templates Toolkit",
-      pictures: [],
-      technologies: ["Business Analysis", "Requirements", "Process Mapping", "Templates"],
-      category: "Business Analysis",
-      date: "2025",
-      github: "https://github.com/Sai-Devarakonda/ba-templates-toolkit",
-      visit: "https://github.com/Sai-Devarakonda/ba-templates-toolkit",
-      description:
-        "A comprehensive open-source collection of professional Business Analysis templates: BRD, user story cards, RAID log, UAT test plans, stakeholder register, and process mapping guide. A practical reference toolkit for BA practitioners at any level."
     },
     {
       name: "Agile Sprint Tracker Dashboard",
@@ -270,22 +234,6 @@ let info = {
   portfolio_design: [],
   articles: [
     {
-      title: "AI Tools Transforming Business Analysis in 2025",
-      date: "May 2025",
-      category: "Trends",
-      tags: ["AI", "Business Analysis", "Copilot", "Automation"],
-      summary: "How Microsoft Copilot, ChatGPT, and AI-powered process mining are reshaping the BA role, from requirements elicitation to documentation, stakeholder comms, and gap analysis.",
-      content: aiToolsContent
-    },
-    {
-      title: "Top BA Tools Every Analyst Should Know",
-      date: "April 2025",
-      category: "Tools",
-      tags: ["Jira", "Azure DevOps", "Confluence", "Miro", "Power BI"],
-      summary: "A practical guide to the modern BA toolkit, covering requirements management, collaboration, process modelling, and reporting tools used across industries in 2025.",
-      content: topBaToolsContent
-    },
-    {
       title: "Hybrid Agile: Why One-Size-Fits-All No Longer Works",
       date: "March 2025",
       category: "Project Management",
@@ -302,9 +250,9 @@ let info = {
       content: riskMgmtContent
     },
     {
-      title: "Stakeholder Management: A Business Analyst's Playbook",
+      title: "Stakeholder Management: A Project Coordinator's Playbook",
       date: "January 2025",
-      category: "BA Skills",
+      category: "Delivery Skills",
       tags: ["Stakeholders", "Communication", "Workshops", "Power-Interest Grid"],
       summary: "A step-by-step guide to mapping, engaging, and managing stakeholders throughout a project, covering power/interest grids, communication planning, and facilitating productive workshops.",
       content: stakeholderContent

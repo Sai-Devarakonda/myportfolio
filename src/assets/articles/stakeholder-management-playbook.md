@@ -1,4 +1,4 @@
-# Stakeholder Management: A Business Analyst's Playbook
+# Stakeholder Management: A Project Coordinator's Playbook
 
 *By Sai Harini Devarakonda | January 2025*
 
@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Poor stakeholder management is one of the top causes of project failure. Missed requirements, resistant users, delayed approvals, and scope creep almost always trace back to stakeholders who were not identified, understood, or engaged effectively. This playbook gives Business Analysts a practical, step-by-step approach to managing stakeholders throughout the full project lifecycle.
+Poor stakeholder management is one of the top causes of project failure. Missed requirements, resistant users, delayed approvals, and scope creep almost always trace back to stakeholders who were not identified, understood, or engaged effectively. This playbook gives project coordinators and project managers a practical, step-by-step approach to managing stakeholders throughout the full project lifecycle.
 
 ---
 
@@ -72,7 +72,7 @@ The best way to gather this is through a **30-minute informal pre-engagement con
 
 Match your elicitation technique to the stakeholder type and information needed:
 
-| Technique | Best For | BA Tips |
+| Technique | Best For | Tips |
 |-----------|---------|---------|
 | **1-to-1 Interviews** | Key decision-makers, sensitive topics | Prepare open-ended questions; record (with consent) for accuracy |
 | **Workshops** | Cross-functional requirements, process mapping | Use Miro or physical whiteboards; set clear objectives upfront |
@@ -85,7 +85,7 @@ Match your elicitation technique to the stakeholder type and information needed:
 
 ## Step 5: Run Effective Workshops
 
-Workshops are the BA's highest-value activity — and the most commonly wasted hour. Make them count:
+Workshops are one of the highest-value activities in a project — and the most commonly wasted hour. Make them count:
 
 **Before the workshop:**
 - Send a pre-read: scope, objectives, and what you need from participants
@@ -129,8 +129,8 @@ Document how, when, and what you will communicate to each stakeholder group:
 Stakeholder Group | Information Needed | Format | Frequency | Owner
 ──────────────────────────────────────────────────────────────────
 Steering Group    | RAG status, risks  | 1-page report | Monthly | PM
-Project Team      | Sprint progress    | Stand-up + board | Daily | BA/PM
-End Users         | Change impact      | Email + team brief | Key milestones | BA
+Project Team      | Sprint progress    | Stand-up + board | Daily | PM
+End Users         | Change impact      | Email + team brief | Key milestones | PM
 Regulators        | Compliance status  | Formal submission | Per requirement | PM/Legal
 ```
 

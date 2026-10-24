@@ -89,8 +89,6 @@ The traditional model — project delivers, project closes, BAU takes over — i
 - **Cross-functional product teams** — business, technical, and design expertise in one team with stable, long-term ownership
 - **Product Owner role** — evolving beyond Scrum ritual into genuine strategic product stewardship
 
-**For BAs:** The BA role increasingly overlaps with Product Owner. Understanding product discovery frameworks (Jobs to be Done, continuous interview techniques, opportunity solution trees) will be a differentiator.
-
 ---
 
 ## Trend 7: Skills Shift — Soft Skills Are the New Hard Skills

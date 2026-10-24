@@ -6,7 +6,7 @@
 
 ## Introduction
 
-IT projects fail at an alarming rate — not because the technology is wrong, but because the risks were identified too late, misclassified, or never properly mitigated. Drawing from research across multiple industries, this article presents a practical risk management framework that project managers and business analysts can apply from day one of any IT initiative.
+IT projects fail at an alarming rate — not because the technology is wrong, but because the risks were identified too late, misclassified, or never properly mitigated. Drawing from research across multiple industries, this article presents a practical risk management framework that project managers and their teams can apply from day one of any IT initiative.
 
 ---
 

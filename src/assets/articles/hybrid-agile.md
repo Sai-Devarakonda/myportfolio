@@ -51,7 +51,7 @@ Structured UAT and sign-off (Waterfall)
 Live deployment
 ```
 
-**BA's role:** Write the initiation documentation (PID, BRD, stakeholder register) that satisfies governance, then operate in sprint cycles. Maintain a living requirements register that tracks story-level changes back to governance-approved scope.
+**The project coordinator's role:** Write the initiation documentation (PID, BRD, stakeholder register) that satisfies governance, then operate in sprint cycles. Maintain a living requirements register that tracks story-level changes back to governance-approved scope.
 
 ---
 
