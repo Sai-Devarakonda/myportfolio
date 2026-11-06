@@ -17,10 +17,10 @@
         />
         <div
           v-else
-          class="d-flex align-items-center justify-content-center"
-          style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 180px;"
+          class="d-flex align-items-center justify-content-center card-cover"
+          style="height: 180px;"
         >
-          <span style="color: white; font-size: 0.95rem; font-weight: 600; text-align: center; padding: 1rem;">{{ portfolio.name }}</span>
+          <span class="card-cover-title">{{ portfolio.name }}</span>
         </div>
       </div>
       <div class="card-body pborder-top">
@@ -51,7 +51,7 @@
             class="btn-sm btn btn-outline-secondary no-outline"
             @click.prevent="showModal"
           >
-            read more
+            Read more
           </button>
           <button
             href="#"
@@ -59,7 +59,7 @@
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
-            visit website
+            Visit website
           </button>
         </div>
       </div>

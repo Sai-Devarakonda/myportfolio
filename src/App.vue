@@ -2,7 +2,7 @@
   <div id="app" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
     <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
     <div class="parent">
-      <Home :nightMode="nightMode" />
+      <Home :nightMode="nightMode" @scroll="scrollTo" />
       <About id="about" :nightMode="nightMode" />
       <Skills id="skills" :nightMode="nightMode" />
       <Portfolio id="portfolio" :nightMode="nightMode" />
@@ -49,8 +49,9 @@ export default {
     }
   },
   mounted() {
+    const section = window.location.pathname.replace(/\/+$/, "").split("/").pop();
     ["about", "contact", "skills", "portfolio"].forEach((l) => {
-      if (window.location.href.includes(l)) {
+      if (section === l) {
         var elementPosition = document.getElementById(l).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
       }

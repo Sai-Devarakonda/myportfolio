@@ -17,7 +17,7 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >portfolio.</span
+          >Portfolio</span
         >
       </div>
       <hr
@@ -25,8 +25,8 @@
         :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
       />
 
-      <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-        <v-tab title="projects">
+      <vue-tabs :activeTextColor="!nightMode ? '#1B2A4A' : '#E3C565'">
+        <v-tab title="Projects">
           <br />
           <div class="row">
             <div
@@ -49,14 +49,14 @@
               />
             </div>
           </div>
-          <div class="text-center py-3" v-if="showBtn !== 'show less'">
+          <div class="text-center py-3" v-if="showBtn !== 'Show less'">
             <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
           </div>
         </v-tab>
 
 
 
-        <v-tab title="articles">
+        <v-tab title="Articles">
           <br />
           <div class="row">
             <div
@@ -137,7 +137,7 @@ export default {
       modal_info: {},
       article_modal_info: {},
       number: 3,
-      showBtn: "show more",
+      showBtn: "Show more",
       shower: 0,
       data: [
         '<div class="example-slide">Slide 1</div>',
@@ -197,13 +197,13 @@ export default {
 
       if (this.number == this.all_info.length && this.shower == 0) {
         this.shower = 1;
-        this.showBtn = "show less";
+        this.showBtn = "Show less";
       } else if (this.number == this.all_info.length && this.shower == 1) {
         var elementPosition = document.getElementById("portfolio").offsetTop;
         window.scrollTo({ top: elementPosition + 5, behavior: "smooth" });
         this.shower = 0;
         this.number = 3;
-        this.showBtn = "show more";
+        this.showBtn = "Show more";
       }
     },
   },

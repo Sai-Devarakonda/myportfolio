@@ -15,6 +15,16 @@ let info = {
   },
   description:
     "Project coordinator and aspiring project manager with a background spanning software delivery, data and workforce operations. I started as a full-stack developer, moved into Agile delivery at Cognizant, and most recently coordinated workforce projects across NHS Trusts at NHS Professionals, where I cut hiring-process discrepancies to zero and halved candidate turnaround time.<br><br>I currently volunteer as a Junior Project Manager at Reco Genie, an AI start-up, running sprints in Jira, testing releases and onboarding early-adopter restaurants. CAPM certified, PRINCE2 Practitioner in progress, with a Master's in Business Management from the University of Strathclyde. Open to project coordinator and junior project manager roles.",
+  hero: {
+    role: "Project Coordinator \u00b7 Junior Project Manager \u00b7 CAPM Certified",
+    tagline:
+      "I keep projects moving across people, process and technology. Most recently I coordinated workforce projects across NHS Trusts; today I run sprints and releases at an AI start-up.",
+    stats: [
+      { value: "0%", label: "hiring-process discrepancies, down from 2 to 3%" },
+      { value: "1.5 wks", label: "candidate turnaround, down from 3 weeks" },
+      { value: "200+", label: "candidates a week across NHS Trusts" }
+    ]
+  },
   links: {
     linkedin: "https://www.linkedin.com/in/harinidevarakonda",
     github: "https://github.com/Sai-Devarakonda",

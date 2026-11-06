@@ -17,13 +17,18 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >about me.</span
+          >About me</span
         >
       </div>
       <hr
         width="50%"
         :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
       />
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="about-intro" v-html="description"></p>
+        </div>
+      </div>
       <div class="row">
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
           <Timeline :data="education" :nightMode="nightMode" />
@@ -52,12 +57,13 @@ export default {
   },
   data() {
     return {
+      description: info.description,
       education: {
-        title: "education",
+        title: "Education",
         data: info.education,
       },
       experience: {
-        title: "experiences",
+        title: "Experience",
         data: info.experience,
       },
     };

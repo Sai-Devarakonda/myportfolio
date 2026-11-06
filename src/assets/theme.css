@@ -1,0 +1,598 @@
+/* ==========================================================
+   Navy & Gold theme
+   All colours live here as variables, so the whole site can be
+   re-themed by changing the values in :root below.
+   ========================================================== */
+
+:root {
+  --navy: #1b2a4a;
+  --navy-deep: #13203b;
+  --navy-soft: #2c3e63;
+  --gold: #c9a227;
+  --gold-light: #e3c565;
+  --gold-dark: #8a6d12;
+  --ivory: #faf8f3;
+  --paper: #ffffff;
+  --ink: #1f2633;
+  --muted: #5b6475;
+  --line: #e6e1d4;
+  --chip: #eef1f7;
+
+  /* night mode */
+  --night-bg: #0b1324;
+  --night-surface: #111c33;
+  --night-card: #18264a;
+  --night-ink: #e6e9f0;
+  --night-muted: #a9b2c5;
+  --night-line: #26365c;
+
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- Base ---------- */
+#app {
+  font-family: var(--sans) !important;
+  color: var(--ink) !important;
+  background: var(--ivory);
+  font-size: 16px;
+  line-height: 1.65;
+}
+#app.text-light {
+  color: var(--night-ink) !important;
+  background: var(--night-bg);
+}
+#app .parent {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Light sections alternate ivory / white */
+#app .bg-white {
+  background-color: var(--paper) !important;
+}
+#app .bg-light {
+  background-color: var(--ivory) !important;
+}
+
+/* Night mode surfaces */
+#app .bg-dark {
+  background-color: var(--night-bg) !important;
+}
+#app .bg-dark2 {
+  background-color: var(--night-surface) !important;
+}
+#app .bg-dark3,
+#app .pcard-dark {
+  background-color: var(--night-card) !important;
+}
+#app .text-light {
+  color: var(--night-ink) !important;
+}
+
+#app .pgray {
+  color: var(--navy) !important;
+}
+#app .pblue {
+  color: var(--gold) !important;
+}
+
+/* ---------- Navbar ---------- */
+#app nav.navbar {
+  background-color: rgba(19, 32, 59, 0.97) !important;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.35) !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  backdrop-filter: blur(6px);
+}
+#app nav.navbar.bg-dark2 {
+  background-color: rgba(9, 15, 30, 0.97) !important;
+}
+#app nav .nav-link {
+  color: #d5d9e3 !important;
+  font-family: var(--sans);
+  font-weight: 500 !important;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+#app nav .nav-link:hover {
+  color: var(--gold-light) !important;
+}
+#app nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 2px;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+#app nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+#app nav .navbar-toggler span {
+  color: var(--gold-light) !important;
+}
+#app nav .logo-title-name {
+  font-family: var(--serif);
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  color: #ffffff !important;
+  letter-spacing: 0.5px !important;
+}
+#app nav .logo-title-dot {
+  color: var(--gold) !important;
+}
+@media (max-width: 991px) {
+  #app nav .navbar-collapse {
+    padding: 8px 0 12px;
+  }
+  #app nav .nav-link::after {
+    display: none;
+  }
+}
+
+/* ---------- Section titles ---------- */
+#app .title {
+  font-family: var(--serif) !important;
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  color: var(--navy) !important;
+  letter-spacing: 0.2px;
+}
+#app .text-light .title,
+#app .title.text-light {
+  color: #ffffff !important;
+}
+/* the long grey rule under each title becomes a short gold bar */
+#app hr[width="50%"] {
+  width: 64px !important;
+  height: 3px;
+  border: none !important;
+  background: var(--gold) !important;
+  opacity: 1;
+  margin: 14px auto 36px;
+}
+#app .py-4.p-st,
+#app .container.py-4 {
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+}
+
+/* ---------- About ---------- */
+#app .about-intro {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 auto 32px;
+}
+#app .text-light .about-intro,
+#app .bg-dark2 .about-intro {
+  color: var(--night-muted);
+}
+
+/* Timeline */
+#app .title1 {
+  font-family: var(--serif) !important;
+  font-weight: 600 !important;
+  font-size: 26px !important;
+  color: var(--navy);
+}
+#app .text-light .title1 {
+  color: var(--gold-light);
+}
+#app ul.timeline .title2 {
+  font-family: var(--sans);
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  color: var(--navy);
+}
+#app .text-light ul.timeline .title2 {
+  color: #ffffff;
+}
+#app ul.timeline .title3 {
+  font-weight: 500;
+  color: var(--gold-dark);
+}
+#app .text-light ul.timeline .title3 {
+  color: var(--gold-light);
+}
+#app ul.timeline .date {
+  font-size: 13px !important;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+#app .text-light ul.timeline .date {
+  color: var(--night-muted);
+}
+#app ul.timeline:before {
+  background: var(--line) !important;
+}
+#app .text-light ul.timeline:before {
+  background: var(--night-line) !important;
+}
+#app ul.timeline > li:before {
+  background: var(--gold) !important;
+  border: 3px solid var(--paper) !important;
+  box-shadow: 0 0 0 2px var(--gold);
+  width: 18px !important;
+  height: 18px !important;
+  left: 21px !important;
+}
+#app .text-light ul.timeline > li:before {
+  border-color: var(--night-surface) !important;
+}
+
+/* Skill chips everywhere */
+#app .badge {
+  background-color: var(--chip) !important;
+  color: var(--navy) !important;
+  border: 1px solid #dde3ee;
+  border-radius: 999px !important;
+  font-family: var(--sans);
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  padding: 6px 12px !important;
+  margin-right: 6px;
+}
+#app .badge.bg-dark2,
+#app .badge.bg-dark4,
+#app .text-light .badge {
+  background-color: rgba(201, 162, 39, 0.12) !important;
+  color: var(--gold-light) !important;
+  border-color: rgba(201, 162, 39, 0.3);
+}
+
+/* ---------- Skills ---------- */
+#app .bg-div .fa,
+#app .bg-div .fas {
+  color: var(--gold) !important;
+  font-size: 34px !important;
+}
+#app .bg-div {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  box-shadow: 0 8px 20px rgba(27, 42, 74, 0.18);
+}
+#app .bg-dark .bg-div {
+  background: var(--night-card);
+  box-shadow: none;
+}
+#app .title2 {
+  font-family: var(--sans);
+}
+#app #skills .title2 {
+  font-family: var(--serif);
+  font-weight: 600 !important;
+  font-size: 21px !important;
+  text-transform: capitalize;
+  color: var(--navy);
+}
+#app .bg-dark #skills .title2,
+#app #skills.bg-dark .title2,
+#app #skills .text-light .title2 {
+  color: #ffffff;
+}
+#app #skills hr[width="50%"] {
+  width: 32px !important;
+  height: 2px;
+  margin: 10px auto 14px;
+}
+#app #skills .title3 {
+  color: var(--muted);
+  font-size: 15px !important;
+  line-height: 1.75;
+}
+#app #skills.bg-dark .title3 {
+  color: var(--night-muted);
+}
+
+/* ---------- Portfolio cards ---------- */
+#app .pcard,
+#app .pcard-dark {
+  border-radius: 10px !important;
+  overflow: hidden;
+  border: 1px solid var(--line) !important;
+  box-shadow: 0 6px 22px rgba(27, 42, 74, 0.08) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+#app .pcard-dark {
+  border-color: var(--night-line) !important;
+  box-shadow: none !important;
+}
+#app .pcard:hover,
+#app .pcard-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(27, 42, 74, 0.16) !important;
+}
+#app .card-cover {
+  position: relative;
+  background: radial-gradient(400px 180px at 90% 0%, rgba(201, 162, 39, 0.28), transparent 60%),
+    linear-gradient(150deg, var(--navy) 0%, var(--navy-deep) 100%);
+  border-bottom: 3px solid var(--gold);
+}
+#app .card-cover-title {
+  font-family: var(--serif);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+#app .pborder-top {
+  border-top: none !important;
+}
+#app .card-body .title2 {
+  font-family: var(--serif);
+  font-weight: 600 !important;
+  font-size: 19px !important;
+  color: var(--navy);
+}
+#app .pcard-dark .card-body .title2 {
+  color: #ffffff;
+}
+#app .card-body .title3 {
+  color: var(--muted);
+  font-size: 15px !important;
+}
+#app .pcard-dark .card-body .title3 {
+  color: var(--night-muted);
+}
+
+/* Portfolio tabs */
+#app .vue-tabs .nav-tabs {
+  font-family: var(--serif);
+}
+#app .vue-tabs .nav-tabs > li > a:after {
+  border-color: var(--gold) !important;
+}
+
+/* ---------- Buttons (site-wide) ---------- */
+#app .btn {
+  border-color: var(--navy) !important;
+  color: var(--navy) !important;
+  border-radius: 4px !important;
+  font-family: var(--sans);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+#app .btn:hover,
+#app .btn:focus {
+  background-color: var(--navy) !important;
+  border-color: var(--navy) !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+#app .text-light .btn,
+#app .pcard-dark .btn,
+#app .bg-dark .btn,
+#app .bg-dark2 .btn {
+  border-color: var(--gold) !important;
+  color: var(--gold-light) !important;
+}
+#app .text-light .btn:hover,
+#app .pcard-dark .btn:hover,
+#app .bg-dark .btn:hover,
+#app .bg-dark2 .btn:hover {
+  background-color: var(--gold) !important;
+  color: var(--navy) !important;
+}
+
+/* ---------- Contact ---------- */
+#app .pinput {
+  font-family: var(--sans);
+  font-size: 16px !important;
+  border: 1px solid var(--line) !important;
+  background: var(--paper);
+  border-radius: 6px !important;
+  padding: 12px 14px !important;
+  color: var(--ink);
+}
+#app .pinput:focus {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.18);
+}
+#app .pgray-dark,
+#app .text-light .pinput {
+  background: var(--night-card) !important;
+  border-color: var(--night-line) !important;
+  color: var(--night-ink) !important;
+}
+#contact .btn {
+  background: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--navy) !important;
+  padding: 10px 28px;
+}
+#contact .btn:hover {
+  background: var(--gold-light) !important;
+  border-color: var(--gold-light) !important;
+}
+@media (max-width: 767px) {
+  #app .pinput {
+    width: 100% !important;
+  }
+}
+
+/* ---------- Footer ---------- */
+#app .bg-secondary {
+  background-color: var(--navy-deep) !important;
+  border-top: 3px solid var(--gold);
+}
+#app .bg-secondary span {
+  color: #c9cfdb;
+  font-size: 14px;
+}
+#app .bg-secondary .btn {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #d5d9e3 !important;
+  border-radius: 50% !important;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+}
+#app .bg-secondary .btn:hover {
+  border-color: var(--gold) !important;
+  background: transparent !important;
+  color: var(--gold) !important;
+}
+
+/* ---------- Tooltips, modals, scrollbar ---------- */
+.tooltip .tooltip-inner {
+  background: var(--navy) !important;
+  font-family: var(--sans);
+}
+.tooltip .tooltip-arrow {
+  border-color: var(--navy) !important;
+}
+.modal-content h1,
+.modal-content h2,
+.modal-content h3 {
+  font-family: var(--serif);
+  color: var(--navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy-soft) !important;
+}
+
+/* Keep text readable on small screens */
+@media (max-width: 580px) {
+  #app {
+    width: 100% !important;
+  }
+  #app .title {
+    font-size: 32px !important;
+  }
+  #app .py-4.p-st,
+  #app .container.py-4 {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
+}
+
+/* ---------- Layout fixes ---------- */
+#app .title {
+  display: block;
+  text-align: center;
+}
+#app .vue-tabs .nav-tabs {
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px;
+}
+#app .vue-tabs .tabs__link {
+  color: var(--muted) !important;
+}
+#app .card-body {
+  padding: 20px 22px 22px !important;
+}
+#app .badge {
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+#app ul.timeline div[style*="justify"] {
+  text-align: left !important;
+  color: var(--muted);
+}
+#app .text-light ul.timeline div[style*="justify"] {
+  color: var(--night-muted);
+}
+#app p[class*="title3"] {
+  text-align: left !important;
+}
+#app #skills .row {
+  justify-content: center;
+}
+#app nav.navbar {
+  z-index: 1030 !important;
+}
+#app .card-cover {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#app nav.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+#app .vue-tabs .title {
+  display: inline !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+/* cards size to their content so nothing spills out */
+#app .pcard,
+#app .pcard-dark {
+  height: auto !important;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+#app .pcard .card-body,
+#app .pcard-dark .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+#app .bheight {
+  height: auto !important;
+  overflow: visible !important;
+  margin-bottom: 8px;
+}
+#app .pheight {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  flex: 1 1 auto;
+}
+#app .card-body .text-center {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px !important;
+}
+#app .card-body .text-center .btn.ml-4 {
+  margin-left: 0 !important;
+}
+/* simpler tab underline */
+#app .vue-tabs .nav-tabs > li > a:after {
+  display: none !important;
+}
+#app .vue-tabs .nav-tabs > li > a {
+  border-bottom: 2px solid transparent !important;
+  padding: 6px 2px !important;
+  margin: 0 14px !important;
+}
+#app .vue-tabs .nav-tabs > li.active > a {
+  border-bottom-color: var(--gold) !important;
+}
+#app .text-center {
+  text-align: center !important;
+}
+@media (min-width: 992px) {
+  #app nav .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end;
+  }
+  #app nav .navbar-nav {
+    margin-left: auto !important;
+    flex-direction: row;
+    align-items: center;
+  }
+}
