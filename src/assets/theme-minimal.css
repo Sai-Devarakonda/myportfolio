@@ -1,0 +1,621 @@
+/* ==========================================================
+   Modern Minimal theme
+   Loaded after theme.css and overrides it: white space, black
+   type, one coral accent. Change --accent to re-colour the site.
+   ========================================================== */
+
+:root {
+  --accent: #e85d4a;
+  --accent-dark: #c9442f;
+  --accent-soft: #fdeeeb;
+  --ink: #111111;
+  --ink-2: #2b2b2b;
+  --muted: #6b6b6b;
+  --line: #ececec;
+  --paper: #ffffff;
+  --wash: #f7f6f4;
+
+  --night-bg: #0e0e0e;
+  --night-surface: #151515;
+  --night-card: #1c1c1c;
+  --night-ink: #f2f2f2;
+  --night-muted: #9a9a9a;
+  --night-line: #2a2a2a;
+
+  --display: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --sans: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- Base ---------- */
+#app {
+  background: var(--paper);
+  color: var(--ink) !important;
+}
+#app .bg-white,
+#app .bg-light {
+  background-color: var(--paper) !important;
+}
+#app #skills.bg-white {
+  background-color: var(--wash) !important;
+}
+#app .pgray {
+  color: var(--ink) !important;
+}
+#app .pblue {
+  color: var(--accent) !important;
+}
+
+/* ---------- Navbar ---------- */
+#app nav.navbar {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-bottom: 1px solid var(--line) !important;
+  backdrop-filter: blur(10px);
+}
+#app nav.navbar.bg-dark2 {
+  background-color: rgba(14, 14, 14, 0.92) !important;
+  border-bottom-color: var(--night-line) !important;
+}
+#app nav .nav-link {
+  color: var(--ink-2) !important;
+  font-size: 15px;
+}
+#app nav.bg-dark2 .nav-link {
+  color: var(--night-ink) !important;
+}
+#app nav .nav-link:hover {
+  color: var(--accent) !important;
+}
+#app nav .nav-link::after {
+  background: var(--accent);
+  height: 2px;
+}
+#app nav .navbar-toggler span {
+  color: var(--ink) !important;
+}
+#app nav.bg-dark2 .navbar-toggler span {
+  color: var(--night-ink) !important;
+}
+#app nav .logo-title-name {
+  font-family: var(--display);
+  font-weight: 800 !important;
+  font-size: 26px !important;
+  letter-spacing: -0.04em !important;
+  color: var(--ink) !important;
+}
+#app nav.bg-dark2 .logo-title-name {
+  color: var(--night-ink) !important;
+}
+#app nav .logo-title-dot {
+  color: var(--accent) !important;
+  font-size: 30px !important;
+}
+
+/* ---------- Hero ---------- */
+#app .hero {
+  background: var(--paper) !important;
+  color: var(--ink);
+  padding: 150px 0 100px;
+}
+#app .hero::after {
+  display: none;
+}
+#app .hero.hero-night {
+  background: var(--night-bg) !important;
+}
+#app .hero-eyebrow {
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+#app .hero-name {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  color: var(--ink);
+  margin-bottom: 22px;
+}
+#app .hero-night .hero-name {
+  color: var(--night-ink);
+}
+#app .hero-role {
+  color: var(--ink-2);
+  font-weight: 600;
+  font-size: 18px;
+}
+#app .hero-night .hero-role {
+  color: var(--night-ink);
+}
+#app .hero-tagline {
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.6;
+}
+#app .hero-night .hero-tagline {
+  color: var(--night-muted);
+}
+#app .hero-btn {
+  border-radius: 999px;
+  padding: 13px 26px;
+}
+#app .hero-btn-gold {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff !important;
+}
+#app .hero-btn-gold:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+#app .hero-btn-outline {
+  border: 1.5px solid var(--ink);
+  color: var(--ink) !important;
+}
+#app .hero-btn-outline:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #ffffff !important;
+}
+#app .hero-night .hero-btn-outline {
+  border-color: var(--night-ink);
+  color: var(--night-ink) !important;
+}
+#app .hero-night .hero-btn-outline:hover {
+  background: var(--night-ink);
+  color: var(--night-bg) !important;
+}
+#app .hero-icon {
+  border: 1.5px solid var(--line);
+  color: var(--ink-2) !important;
+}
+#app .hero-icon:hover {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+}
+#app .hero-night .hero-icon {
+  border-color: var(--night-line);
+  color: var(--night-ink) !important;
+}
+#app .hero-stats {
+  border-top: 1px solid var(--line);
+}
+#app .hero-night .hero-stats {
+  border-top-color: var(--night-line);
+}
+#app .stat + .stat {
+  border-left: 1px solid var(--line);
+}
+#app .hero-night .stat + .stat {
+  border-left-color: var(--night-line);
+}
+#app .stat-value {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+}
+#app .stat-label {
+  color: var(--muted);
+}
+#app .portrait-ring {
+  position: relative;
+  padding: 0;
+  border-radius: 28px;
+  background: none;
+  box-shadow: none;
+}
+#app .portrait-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(18px, 18px);
+  border-radius: 28px;
+  background: var(--accent);
+  z-index: 0;
+}
+#app .portrait-ring img {
+  position: relative;
+  z-index: 1;
+  border-radius: 28px;
+  border: none;
+  width: 340px;
+  height: 400px;
+  background: var(--wash);
+}
+@media only screen and (max-width: 991px) {
+  #app .hero-name {
+    font-size: 56px;
+  }
+  #app .portrait-ring img {
+    width: 280px;
+    height: 330px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #app .hero {
+    padding: 110px 0 64px;
+  }
+  #app .hero-name {
+    font-size: 44px;
+  }
+  #app .portrait-ring {
+    margin-bottom: 40px;
+  }
+  #app .portrait-ring::before {
+    transform: translate(10px, 10px);
+  }
+  #app .portrait-ring img {
+    width: 200px;
+    height: 230px;
+  }
+  #app .stat-value {
+    font-size: 28px;
+  }
+}
+
+/* ---------- Section titles: big, left-aligned, numbered ---------- */
+#about .container > .text-center:first-child,
+#skills .container > .text-center:first-child,
+#portfolio .container > .text-center:first-child,
+#contact .container > .text-center:first-child {
+  text-align: left !important;
+}
+#app .title {
+  font-family: var(--display) !important;
+  font-weight: 800 !important;
+  font-size: 56px !important;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  color: var(--ink) !important;
+  text-align: left;
+}
+#app .title::before {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+#about .title::before {
+  content: "01 / ABOUT";
+}
+#skills .title::before {
+  content: "02 / SKILLS";
+}
+#portfolio .title::before {
+  content: "03 / WORK";
+}
+#contact .title::before {
+  content: "04 / CONTACT";
+}
+#app .text-light .title,
+#app .title.text-light {
+  color: var(--night-ink) !important;
+}
+#app hr[width="50%"] {
+  display: none;
+}
+#app .py-4.p-st,
+#app .container.py-4 {
+  padding-top: 96px !important;
+  padding-bottom: 96px !important;
+}
+#app .about-intro {
+  text-align: left;
+  font-size: 21px;
+  line-height: 1.65;
+  color: var(--ink-2);
+  max-width: 820px;
+  margin: 36px 0 56px;
+}
+#app .about-intro + * {
+  margin: 0;
+}
+#about .row.justify-content-center {
+  justify-content: flex-start !important;
+}
+#app .text-light .about-intro,
+#app .bg-dark2 .about-intro {
+  color: var(--night-muted);
+}
+
+/* ---------- Timeline ---------- */
+#app .title1 {
+  font-family: var(--display) !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted) !important;
+}
+#app ul.timeline .title2 {
+  font-weight: 700 !important;
+  color: var(--ink);
+}
+#app .text-light ul.timeline .title2 {
+  color: var(--night-ink);
+}
+#app ul.timeline .title3 {
+  color: var(--accent);
+  font-weight: 600;
+}
+#app .text-light ul.timeline .title3 {
+  color: var(--accent);
+}
+#app ul.timeline:before {
+  background: var(--line) !important;
+  width: 1px !important;
+}
+#app ul.timeline > li:before {
+  background: var(--accent) !important;
+  border: 3px solid var(--paper) !important;
+  box-shadow: none;
+  width: 14px !important;
+  height: 14px !important;
+  left: 23px !important;
+}
+#app .text-light ul.timeline > li:before {
+  border-color: var(--night-surface) !important;
+}
+
+/* ---------- Chips ---------- */
+#app .badge {
+  background-color: transparent !important;
+  color: var(--ink-2) !important;
+  border: 1px solid #e2e2e2;
+  font-weight: 500 !important;
+}
+#app .badge.bg-dark2,
+#app .badge.bg-dark4,
+#app .text-light .badge {
+  background-color: transparent !important;
+  color: var(--night-ink) !important;
+  border-color: var(--night-line);
+}
+
+/* ---------- Skills ---------- */
+#app .bg-div {
+  width: auto;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  justify-content: flex-start;
+}
+#app .bg-dark .bg-div {
+  background: none;
+}
+#app .bg-div .fa,
+#app .bg-div .fas {
+  color: var(--accent) !important;
+  font-size: 28px !important;
+}
+#app #skills .row > div {
+  text-align: left !important;
+  padding-left: 15px !important;
+  padding-right: 32px !important;
+}
+#app #skills .title2 {
+  font-family: var(--display);
+  font-weight: 800 !important;
+  font-size: 22px !important;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  padding-top: 14px !important;
+  margin-bottom: 10px;
+}
+#app #skills.bg-dark .title2 {
+  color: var(--night-ink);
+}
+#app #skills .row {
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+/* ---------- Portfolio cards ---------- */
+#app .pcard,
+#app .pcard-dark {
+  border-radius: 18px !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: none !important;
+}
+#app .pcard-dark {
+  border-color: var(--night-line) !important;
+}
+#app .pcard:hover,
+#app .pcard-dark:hover {
+  transform: translateY(-4px);
+  border-color: var(--ink) !important;
+  box-shadow: none !important;
+}
+#app .pcard-dark:hover {
+  border-color: var(--night-ink) !important;
+}
+#app .card-cover {
+  background: var(--wash);
+  border-bottom: none;
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
+  position: relative;
+}
+#app .pcard-dark .card-cover {
+  background: #232323;
+}
+#app .card-cover::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+#app .card-cover-title {
+  font-family: var(--display);
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-align: left;
+  padding: 0 24px 22px;
+}
+#app .pcard-dark .card-cover-title {
+  color: var(--night-ink);
+}
+/* the cover already shows the name, so hide the repeat */
+#app .card-body .title2 {
+  display: none;
+}
+
+/* Tabs */
+#app .vue-tabs .nav-tabs {
+  justify-content: flex-start !important;
+  font-family: var(--display);
+  margin-top: 36px;
+}
+#app .vue-tabs .nav-tabs > li:first-child > a {
+  margin-left: 0 !important;
+}
+#app .vue-tabs .title {
+  font-family: var(--display) !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  letter-spacing: 0;
+}
+#app .vue-tabs .title::before {
+  content: none !important;
+}
+#app .vue-tabs .nav-tabs > li.active > a {
+  border-bottom-color: var(--accent) !important;
+}
+
+/* ---------- Buttons ---------- */
+#app .btn {
+  border: 1.5px solid var(--ink) !important;
+  color: var(--ink) !important;
+  border-radius: 999px !important;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#app .btn:hover,
+#app .btn:focus {
+  background-color: var(--ink) !important;
+  border-color: var(--ink) !important;
+  color: #ffffff !important;
+}
+#app .text-light .btn,
+#app .pcard-dark .btn,
+#app .bg-dark .btn,
+#app .bg-dark2 .btn {
+  border-color: var(--night-ink) !important;
+  color: var(--night-ink) !important;
+}
+#app .text-light .btn:hover,
+#app .pcard-dark .btn:hover,
+#app .bg-dark .btn:hover,
+#app .bg-dark2 .btn:hover {
+  background-color: var(--night-ink) !important;
+  color: var(--night-bg) !important;
+}
+
+/* ---------- Contact ---------- */
+#contact .container > .text-center:not(:first-child) {
+  text-align: left !important;
+  max-width: 640px;
+  margin-top: 40px;
+}
+#app .pinput {
+  width: 100% !important;
+  border: none !important;
+  border-bottom: 1.5px solid #d9d9d9 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  padding: 14px 0 !important;
+  font-size: 18px !important;
+}
+#app .pinput:focus {
+  border-bottom-color: var(--accent) !important;
+  box-shadow: none;
+}
+#app .pgray-dark,
+#app .text-light .pinput {
+  background: transparent !important;
+  border-bottom-color: var(--night-line) !important;
+}
+#contact .btn {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #ffffff !important;
+  padding: 12px 32px;
+  margin-top: 18px;
+}
+#contact .btn:hover {
+  background: var(--accent-dark) !important;
+  border-color: var(--accent-dark) !important;
+}
+
+/* ---------- Footer ---------- */
+#app .bg-secondary {
+  background-color: var(--ink) !important;
+  border-top: none;
+}
+#app .bg-secondary span {
+  color: #bdbdbd;
+}
+#app .bg-secondary .btn {
+  border-color: #3a3a3a !important;
+  color: #e6e6e6 !important;
+}
+#app .bg-secondary .btn:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: transparent !important;
+}
+
+/* ---------- Misc ---------- */
+.tooltip .tooltip-inner {
+  background: var(--ink) !important;
+}
+.tooltip .tooltip-arrow {
+  border-color: var(--ink) !important;
+}
+.modal-content h1,
+.modal-content h2,
+.modal-content h3 {
+  font-family: var(--display);
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd !important;
+}
+
+@media (max-width: 580px) {
+  #app .title {
+    font-size: 40px !important;
+  }
+  #app .py-4.p-st,
+  #app .container.py-4 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+  #app .about-intro {
+    font-size: 18px;
+  }
+}
+
+/* left-align the big section titles (beats the global centring rule) */
+#app .title.text-center,
+#app #about .container > .text-center:first-child,
+#app #skills .container > .text-center:first-child,
+#app #portfolio .container > .text-center:first-child,
+#app #contact .container > .text-center:first-child {
+  text-align: left !important;
+}
+#app #portfolio .text-center.py-3 {
+  margin-top: 28px;
+}
