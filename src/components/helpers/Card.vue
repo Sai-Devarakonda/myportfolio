@@ -29,7 +29,7 @@
           <div class="pb-1 bheight">
             <span
               class="badge mr-2 mb-2 "
-              v-for="tech in portfolio.technologies.slice(0, 4)"
+              v-for="tech in portfolio.technologies"
               :key="tech"
               :class="{ 'bg-dark4': nightMode }"
               >{{ tech }}</span
@@ -37,11 +37,7 @@
           </div>
           <p
             class="title3 m-0 pb-2 pheight pt-1"
-            v-html="
-              portfolio.description.length > 160
-                ? portfolio.description.substring(0, 160) + '...'
-                : portfolio.description
-            "
+            v-html="portfolio.description"
           >
           </p>
         </div>

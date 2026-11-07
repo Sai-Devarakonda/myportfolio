@@ -16,18 +16,14 @@
         <div class="pb-1 bheight">
           <span
             class="badge mr-2 mb-2"
-            v-for="tag in article.tags.slice(0, 4)"
+            v-for="tag in article.tags"
             :key="tag"
             :class="{ 'bg-dark4': nightMode }"
             >{{ tag }}</span
           >
         </div>
         <p class="title3 m-0 pb-2 pt-1 pheight">
-          {{
-            article.summary.length > 160
-              ? article.summary.substring(0, 160) + "..."
-              : article.summary
-          }}
+          {{ article.summary }}
         </p>
         <div class="article-footer">
           <span class="date">{{ article.date }}</span>

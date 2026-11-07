@@ -737,3 +737,16 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
+/* show full card text (no line cutting); cards in a row still match height */
+#app #portfolio .pheight {
+  display: block !important;
+  -webkit-line-clamp: unset !important;
+  overflow: visible !important;
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+}
+#app #portfolio .bheight {
+  min-height: 0 !important;
+}

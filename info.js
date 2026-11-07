@@ -144,7 +144,7 @@ let info = {
         "UAT Coordination",
         "SDLC"
       ],
-      icon: "fa fa-calendar-check-o"
+      icon: "fas fa-calendar-check"
     },
     {
       title: "governance & risk",
@@ -158,7 +158,7 @@ let info = {
         "Compliance & Audit Readiness",
         "Decision Matrix Analysis"
       ],
-      icon: "fa fa-shield"
+      icon: "fas fa-shield-alt"
     },
     {
       title: "stakeholders & teams",
@@ -171,7 +171,7 @@ let info = {
         "Customer Onboarding",
         "Cross-functional Collaboration"
       ],
-      icon: "fa fa-users"
+      icon: "fas fa-users"
     },
     {
       title: "methods",
@@ -185,7 +185,7 @@ let info = {
         "Process Mapping & Improvement",
         "Gap & Impact Analysis"
       ],
-      icon: "fa fa-sitemap"
+      icon: "fas fa-sitemap"
     },
     {
       title: "tools",
@@ -217,7 +217,7 @@ let info = {
         "Lean Six Sigma Foundations",
         "Web Development (Tech Mahindra)"
       ],
-      icon: "fa fa-certificate"
+      icon: "fas fa-certificate"
     }
   ],
   portfolio: [
