@@ -38,7 +38,9 @@
             width="50%"
             :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
           />
-          <span class="title3">{{ skill.info.join(", ") }}</span>
+          <div class="skill-chips">
+            <span class="badge" v-for="item in skill.info" :key="item">{{ item }}</span>
+          </div>
         </div>
       </div>
     </div>

@@ -14,15 +14,17 @@ let info = {
     }
   },
   description:
-    "Project coordinator and aspiring project manager with a background spanning software delivery, data and workforce operations. I started as a full-stack developer, moved into Agile delivery at Cognizant, and most recently coordinated workforce projects across NHS Trusts at NHS Professionals, where I cut hiring-process discrepancies to zero and halved candidate turnaround time.<br><br>I currently volunteer as a Junior Project Manager at Reco Genie, an AI start-up, running sprints in Jira, testing releases and onboarding early-adopter restaurants. CAPM certified, PRINCE2 Practitioner in progress, with a Master's in Business Management from the University of Strathclyde. Open to project coordinator and junior project manager roles.",
+    "I'm a project coordinator moving into project management, with delivery experience across healthcare and technology. At NHS Professionals I coordinated workforce projects across NHS Trusts and around 50 agencies: planning onboarding workstreams, tracking monthly budgets for 30+ departments, managing risks and blockers, and reporting KPIs to Trust leaders in Power BI. By streamlining the process I cut hiring discrepancies to zero and turnaround from three weeks to one and a half.<br><br>Today I volunteer as Junior Project Manager at Reco Genie, an AI start-up, where I run sprint planning and daily stand-ups in Jira, coordinate testing and releases, and turn customer feedback into a prioritised backlog. Earlier, at Vega Prosys, I led a small development team and delivered a six-month project in three. I'm CAPM certified, working towards PRINCE2 Practitioner, and hold a Master's in Business Management from the University of Strathclyde.",
   hero: {
+    eyebrow: "Project Management Portfolio",
     role: "Project Coordinator \u00b7 Junior Project Manager \u00b7 CAPM Certified",
     tagline:
-      "I keep projects moving across people, process and technology. Most recently I coordinated workforce projects across NHS Trusts; today I run sprints and releases at an AI start-up.",
+      "I plan, coordinate and deliver projects across healthcare and technology. I run sprints and releases at an AI start-up today, and before that coordinated multi-Trust workforce projects for the NHS.",
     stats: [
-      { value: "0%", label: "hiring-process discrepancies, down from 2 to 3%" },
-      { value: "1.5 wks", label: "candidate turnaround, down from 3 weeks" },
-      { value: "200+", label: "candidates a week across NHS Trusts" }
+      { value: "2\u00d7", label: "faster: a 6-month project delivered in 3" },
+      { value: "50", label: "agencies coordinated across 2 to 3 NHS Trusts" },
+      { value: "30+", label: "department budgets tracked monthly in SAP" },
+      { value: "0%", label: "compliance errors after streamlining weekly checks (from 5%)" }
     ]
   },
   links: {
@@ -133,64 +135,87 @@ let info = {
       title: "planning & delivery",
       info: [
         "Project Planning & Scheduling",
-        "Milestone & Dependency Tracking",
-        "Resource Coordination",
+        "Milestones & Dependencies",
+        "Resource & Capacity Planning",
         "Budget Tracking",
-        "Scope & Requirements Definition",
+        "Sprint Planning & Stand-ups",
+        "Backlog Management",
+        "Release Management",
         "UAT Coordination",
-        "Process Improvement"
+        "SDLC"
       ],
       icon: "fa fa-calendar-check-o"
     },
     {
-      title: "methods & governance",
+      title: "governance & risk",
       info: [
-        "Agile & Scrum",
-        "Waterfall",
-        "Sprint Planning",
-        "Backlog Refinement",
-        "RAID Log Management",
-        "Risk & Issue Tracking",
-        "Change Control"
+        "RAID Logs",
+        "Risk Registers",
+        "Issue Escalation",
+        "Change Control",
+        "Status & Steering Reporting",
+        "KPI Dashboards",
+        "Compliance & Audit Readiness",
+        "Decision Matrix Analysis"
       ],
-      icon: "fa fa-tasks"
+      icon: "fa fa-shield"
     },
     {
-      title: "stakeholder & communication",
+      title: "stakeholders & teams",
       info: [
-        "Stakeholder Management",
+        "Stakeholder Mapping & Engagement",
         "Workshop Facilitation",
-        "Steering & Governance Reporting",
-        "Cross-functional Collaboration",
-        "Dashboard Reporting",
-        "Status Updates"
+        "Requirements Gathering",
+        "Vendor & Agency Coordination",
+        "Team Leadership & Mentoring",
+        "Customer Onboarding",
+        "Cross-functional Collaboration"
       ],
       icon: "fa fa-users"
     },
     {
-      title: "tools & methods",
+      title: "methods",
       info: [
-        "Jira & Confluence",
+        "Agile (Scrum)",
+        "Waterfall",
+        "Hybrid Delivery",
+        "PRINCE2 Principles",
+        "PMI Standards (CAPM)",
+        "Lean Six Sigma",
+        "Process Mapping & Improvement",
+        "Gap & Impact Analysis"
+      ],
+      icon: "fa fa-sitemap"
+    },
+    {
+      title: "tools",
+      info: [
+        "Jira",
+        "Confluence",
         "Azure DevOps",
-        "Microsoft Project",
+        "Microsoft Planner",
+        "Basecamp",
         "Power BI",
-        "SQL",
         "Tableau",
+        "SQL",
         "Advanced Excel",
         "SAP",
+        "Microsoft Dynamics 365",
         "SharePoint",
-        "Miro"
+        "Miro",
+        "Slack",
+        "Microsoft Copilot & Claude"
       ],
       icon: "fas fa-tools"
     },
     {
       title: "certifications",
       info: [
-        "CAPM - PMI",
+        "CAPM (PMI)",
         "PRINCE2 Practitioner (in progress)",
-        "Project Management Foundations - PMI",
+        "Project Management Foundations",
         "Lean Six Sigma Foundations",
-        "Web Development - Tech Mahindra"
+        "Web Development (Tech Mahindra)"
       ],
       icon: "fa fa-certificate"
     }

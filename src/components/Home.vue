@@ -8,7 +8,7 @@
           data-aos-once="true"
           data-aos-duration="900"
         >
-          <div class="hero-eyebrow">Portfolio</div>
+          <div class="hero-eyebrow">{{ eyebrow }}</div>
           <h1 class="hero-name">{{ name }}</h1>
           <div class="hero-role">{{ role }}</div>
           <p class="hero-tagline">{{ tagline }}</p>
@@ -65,6 +65,7 @@ export default {
     return {
       picture: info.flat_picture,
       name: info.name,
+      eyebrow: info.hero.eyebrow,
       role: info.hero.role,
       tagline: info.hero.tagline,
       stats: info.hero.stats,

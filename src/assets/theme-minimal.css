@@ -619,3 +619,121 @@
 #app #portfolio .text-center.py-3 {
   margin-top: 28px;
 }
+
+/* ---------- Hero stats: four across ---------- */
+#app .hero-stats {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 100%;
+}
+#app .stat {
+  min-width: 0 !important;
+  padding-right: 16px !important;
+}
+#app .stat + .stat {
+  padding-left: 16px !important;
+}
+#app .stat-value {
+  font-size: 34px;
+}
+@media only screen and (max-width: 767px) {
+  #app .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 22px;
+  }
+  #app .stat:nth-child(3) {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* ---------- Skills as chips ---------- */
+#app .skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+#app .skill-chips .badge {
+  margin: 0 !important;
+  background: var(--paper) !important;
+  font-size: 13px !important;
+  padding: 7px 13px !important;
+}
+#app #skills.bg-dark .skill-chips .badge {
+  background: transparent !important;
+}
+#app #skills .row > div {
+  padding-bottom: 48px !important;
+}
+
+/* ---------- Equal-height cards (projects and articles) ---------- */
+#app #portfolio .row > [class*="col-"] {
+  display: flex;
+}
+#app #portfolio .row > [class*="col-"] > div {
+  flex: 1 1 auto;
+  display: flex;
+  min-width: 0;
+}
+#app #portfolio .card {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0 !important;
+}
+#app #portfolio .card-body .text-center,
+#app #portfolio .article-footer {
+  margin-top: auto !important;
+}
+#app #portfolio .pheight {
+  flex: 0 0 auto !important;
+  margin-bottom: 18px !important;
+}
+#app #portfolio .bheight {
+  min-height: 0;
+}
+
+/* ---------- Article cards match project cards ---------- */
+#app .article-cover {
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+#app .cover-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 0 24px 8px;
+}
+#app .article-cover .card-cover-title {
+  font-size: 20px;
+}
+#app .article-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+#app .article-footer .date {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* identical card heights everywhere: fixed tag area, 3-line summary */
+#app #portfolio .bheight {
+  min-height: 92px !important;
+  align-content: flex-start;
+}
+#app #portfolio .pheight {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden !important;
+  min-height: calc(1.65em * 3);
+}
+#app #portfolio .row > [class*="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
